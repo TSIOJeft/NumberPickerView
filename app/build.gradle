@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'maven-publish'
 }
 android {
     namespace 'com.farplace.numberpickerview'
@@ -36,4 +37,19 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+}
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+                // You can then customize attributes of the publication as shown below.
+                groupId = 'com.github.TSIOJeft'
+                artifactId = 'NumberPickerView'
+                version = 'v1.0.2'
+            }
+        }
+    }
 }
