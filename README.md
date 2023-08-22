@@ -31,6 +31,10 @@ allprojects {
 dependencies {
 	        implementation 'com.github.TSIOJeft:NumberPickerView:v1.0.7'
 	}
+
+
+<com.farplace.numberpickerview.ui.MultipleNumberPickerView/>
+
 ```
 # 😎 Custom
 
