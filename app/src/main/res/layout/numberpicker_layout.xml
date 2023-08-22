@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.viewpager2.widget.ViewPager2 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/number_picker"
+    android:layout_width="66dp"
+    android:layout_height="66dp"
+    android:padding="3dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    />

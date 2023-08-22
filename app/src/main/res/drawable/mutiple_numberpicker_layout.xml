@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/numberpicker_border_background"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+<!--    <com.farplace.zm.ui.NumberPickerView-->
+<!--        android:id="@+id/number_picker"-->
+<!--        android:layout_width="66dp"-->
+<!--        android:layout_height="66dp" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="."
+        android:textColor="@color/secondTextColor"
+        android:textSize="42sp" />
+
+    <com.farplace.zm.ui.NumberPickerView
+        android:id="@+id/decimal_number_view"
+        android:layout_width="66dp"
+        android:layout_height="66dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
